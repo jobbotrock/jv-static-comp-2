@@ -2,11 +2,78 @@
    padding: 0;
    margin: 0;
    background-color: white;
+   font-family: sans-serif;
  }
 
-section {
+/* ***************** Side Bar ******************************************/
+
+#sidepanel {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background: grey;
+  border: solid 3px black;
+}
+
+.mini-header {
+  background: grey;
+  color: white;
+}
+
+#sidepanel ul li {
+  diplay: grid;
+  grid-template-rows: 1fr 2fr 1f 2fr;
+  color: white;
+  background: grey;
+  list-style: none;
+  padding: 15px 10px
+  border-bottom: 2px solid white;
+  display: grid;
+  grid-template-rows: 2
+}
+
+ul {
+  background: grey;
+}
+
+/* ***************** Main Header ******************************************/
+
+.section {
+  
+}
+
+.box1 {
+  border: 2px solid black;
+
+}
+
+.box2 {
+  border: 2px solid black;
+}
+
+
+div {
+  color: black;
+}
+
+/* section {
+  border: solid 5px red;
+
+}
+
+#article {
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3)
+} */
+
+/* .aside {
+  width: 20%;
+  height: 100%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  float: left;
   border: solid 5px red;
 }
+
 
 div {
   border: solid 5px black;
