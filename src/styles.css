@@ -1,84 +1,36 @@
 * {
-   padding: 0;
-   margin: 0;
-   background-color: white;
+   box-sizing: border-box;
    font-family: sans-serif;
  }
 
-/* ***************** Side Bar ******************************************/
-
-#sidepanel {
-  position: fixed;
-  width: 20%;
-  height: 100%;
-  background: grey;
-  border: solid 3px black;
-}
-
-.mini-header {
-  background: grey;
-  color: white;
-}
-
-#sidepanel ul li {
-  diplay: grid;
-  grid-template-rows: 1fr 2fr 1f 2fr;
-  color: white;
-  background: grey;
-  list-style: none;
-  padding: 15px 10px
-  border-bottom: 2px solid white;
+body {
   display: grid;
-  grid-template-rows: 2
+  grid-template-columns: 20% 80%;
+}
+/* ***************** Side Bar ******************************************/
+.side-bar{
+  background-color: red;
+  grid-row: 1/ span 5;
+  border: 2px solid black;
 }
 
-ul {
-  background: grey;
+div {
+  border: 2px solid black;
 }
 
+.search-bar{
+  background-color: blue;
+}
+
+.title-bar{
+  background-color: pink;
+}
+
+.tab-bar {
+  background-color: gold;
+}
+
+.main-container{
+  background-color: orange;
+}
 /* ***************** Main Header ******************************************/
-
-.section {
-  
-}
-
-.box1 {
-  border: 2px solid black;
-
-}
-
-.box2 {
-  border: 2px solid black;
-}
-
-
-div {
-  color: black;
-}
-
-/* section {
-  border: solid 5px red;
-
-}
-
-#article {
-  border-bottom: 1px solid rgba(100, 100, 100, 0.3)
-} */
-
-/* .aside {
-  width: 20%;
-  height: 100%;
-  padding-left: .5rem;
-  margin-left: .5rem;
-  float: left;
-  border: solid 5px red;
-}
-
-
-div {
-  border: solid 5px black;
-}
-
-h1 {
-  border: solid 5px black;
-}
