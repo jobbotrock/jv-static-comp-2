@@ -21,13 +21,12 @@ body {
   background-color: red;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: space-around; */
   grid-row: 1/ span 5;
   border: 2px solid black;
 }
 
 .main {
+  padding-left: 10px;
   border-top: solid 2px black;
   display: flex;
   flex-direction: column;
@@ -35,6 +34,7 @@ body {
 }
 
 .admin {
+  padding-left: 10px;
   border-top: solid 2px black;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,7 @@ body {
 }
 
 .categories {
+  padding-left: 10px;
   border-top: solid 2px black;
   border-bottom: solid 2px black;
   display: flex;
@@ -53,16 +54,29 @@ body {
 
 
 
+
 /* ***************** Search Bar *****************************************/
 
 .search-bar {
   background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 /* ***************** Title Bar *****************************************/
 
 .title-bar {
   background-color: pink;
+  padding-left: 30px;
+}
+
+.more-icons {
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: space-around;
 }
 
 /* ***************** Tab Bar ******************************************/
@@ -91,17 +105,42 @@ body {
 }
 
 .left-side {
+  padding: 1em;
   border: 2px solid black;
   display: grid;
+  grid-gap: 1em;
   grid-column-start: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .right-side {
+  padding: 1em;
   border: 2px solid black;
   display: grid;
+  grid-gap: 1em;
   grid-column-start: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-/* ***************** Top Main Container **********************************/
+/* ***************** Bottom Containers **********************************/
+
+.facebook {
+  color: white;
+  background-color: #4267B2
+}
+
+.twitter {
+  color: white;
+  background-color: #00acee;
+}
+
+.linkedin {
+  color: white;
+  background-color: #0e76a8
+}
 
 .grid-container {
   border: 2px solid black;
@@ -126,4 +165,34 @@ body {
   grid-column-start: 2;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.dad-jokes1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.first-important-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.second-important-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+.icon-image {
+  margin-right: 10px;
+}
+
+.email-spam {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
