@@ -57,6 +57,13 @@ body {
 
 .search-bar {
   background-color: blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-buttons {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ***************** Title Bar *****************************************/
