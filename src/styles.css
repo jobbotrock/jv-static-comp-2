@@ -8,29 +8,124 @@ body {
   grid-template-columns: 20% 80%;
 }
 /* ***************** Side Bar ******************************************/
-.side-bar{
+
+
+.side-bar {
   background-color: red;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: space-around; */
   grid-row: 1/ span 5;
   border: 2px solid black;
 }
 
+
 div {
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
 }
 
-.search-bar{
+h5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+
+/* ***************** Search Bar *****************************************/
+
+.search-bar {
   background-color: blue;
 }
 
-.title-bar{
+/* ***************** Title Bar *****************************************/
+
+.title-bar {
   background-color: pink;
 }
+
+/* ***************** Tab Bar ******************************************/
 
 .tab-bar {
   background-color: gold;
 }
 
-.main-container{
-  background-color: orange;
+.nav-tabs {
+  background-color: green;
+  display: flex;
+  justify-content: flex-start;
 }
-/* ***************** Main Header ******************************************/
+
+.nav-links {
+  margin: 10px 30px;
+}
+
+
+/* ***************** Top Main Container **********************************/
+
+.main-container {
+  background-color: orange;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-side {
+  border: 2px solid black;
+  display: grid;
+  grid-column-start: 1;
+}
+
+.right-side {
+  border: 2px solid black;
+  display: grid;
+  grid-column-start: 2;
+}
+/* ***************** Top Main Container **********************************/
+
+.grid-container {
+  border: 2px solid black;
+  background-color: purple;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid-box-left {
+  background-color: teal;
+  border: 2px solid black;
+  display: grid;
+  grid-column-start: 1;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-box-right {
+  background-color: grey;
+  border: 2px solid black;
+  display: grid;
+  grid-column-start: 2;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
