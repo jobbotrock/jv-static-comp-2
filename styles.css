@@ -26,7 +26,8 @@ body {
 }
 
 .side-bar-title {
-  margin-left: 25px;
+  margin-left: 18px;
+  margin-bottom: 0px;
 }
 
 .main {
@@ -37,7 +38,7 @@ body {
 }
 
 .admin {
-  padding-left: 10px;
+  padding-left: 5px;
   border-top: solid 2px black;
   display: flex;
   flex-direction: column;
@@ -46,7 +47,7 @@ body {
 }
 
 .categories {
-  padding-left: 10px;
+  padding-left: 5px;
   border-top: solid 2px black;
   border-bottom: solid 2px black;
   display: flex;
@@ -67,22 +68,37 @@ body {
   align-items: center;
 }
 
+.search-input {
+  margin-bottom: 7px;
+}
 
 /* ***************** Title Bar *****************************************/
 
-.title-bar {
+.header-titles {
+  background-color: #e7bd42;
+}
+
+.title-container {
   background-color: #e7bd42;
   padding-left: 30px;
+  margin: 0px;
   display: flex;
-  align-items: flex-start;
   justify-content: flex-start;
+  align-items: space-around;
+}
+
+.title-subheader {
+  background-color: #e7bd42;
+  padding-left: 30px;
+  margin: 0;
 }
 
 .more-icons {
+  background-color: #e7bd42;
   padding-right: 30px;
   display: flex;
-  align-items: end;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 
@@ -93,6 +109,8 @@ body {
 /* ***************** Tab Bar ******************************************/
 
 .nav-tabs {
+  padding-top: 10px;
+  border-bottom: 2px solid black;
   background-color: #e7bd42;
   display: flex;
   justify-content: flex-start;
@@ -106,6 +124,7 @@ body {
 /* ***************** Top Main Container **********************************/
 
 .main-container {
+  margin: 2em;
   background-color:	#ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -126,7 +145,6 @@ body {
   padding: 1em;
   border: 2px solid black;
   display: grid;
-  grid-gap: 1em;
   grid-column-start: 2;
   display: flex;
   flex-direction: column;
@@ -136,7 +154,7 @@ body {
 
 .facebook {
   color: white;
-  background-color: #4267B2
+  background-color: #4267B2;
 }
 
 .twitter {
@@ -150,29 +168,36 @@ body {
 }
 
 .grid-container {
-  border: 2px solid black;
-  background-color: #6c0020;
+  border-top: 2px solid black;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
 .grid-box-left {
-  background-color: #6c0020;
+  margin: 2em;
+  background-color: #ffffff;
   border: 2px solid black;
   display: grid;
+  grid-template-rows: minmax(50px, 1fr);
   grid-column-start: 1;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 .grid-box-right {
-  background-color: #665e59;
+  color: white;
+  margin: 2em 2em 2em 0em;
+  padding: 1em;
+  background-color: #6c0020;
   border: 2px solid black;
   display: grid;
   grid-column-start: 2;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
 .dad-jokes1 {
   display: flex;
   justify-content: flex-start;
@@ -189,9 +214,10 @@ body {
 .second-important-title {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
+
 
 
 .icon-image {
@@ -205,21 +231,28 @@ body {
 }
 
 
-@media screen and (max-width: 1050px) {
+
+@media screen and (max-width: 900px) {
   .main-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+
+    }
+
+  .right-side {
+    display: flex;
+    justify-content: flex-end
 
   }
 
   .left-side {
-    grid-row-start: 1;
-  }
+    display: flex;
+    justify-content: flex-end
 
-  .right-side {
-    grid-row-start: 2;
   }
 }
+
 
 
 
