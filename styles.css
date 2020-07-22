@@ -18,11 +18,12 @@ body {
 }
 
 .side-bar {
-  background-color: #665e59;
+  color: white;
+  background-color: #6c0020;
   display: flex;
   flex-direction: column;
   grid-row: 1/ span 5;
-  border: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .side-bar-title {
@@ -62,15 +63,17 @@ body {
 /* ***************** Search Bar *****************************************/
 
 .search-bar {
-  background-color: #000000;
+  background-color: #665e59;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.search-input {
-  margin-bottom: 7px;
+.left-buttons {
+  display: flex;
+  align-items: center;
 }
+
 
 /* ***************** Title Bar *****************************************/
 
@@ -117,7 +120,8 @@ body {
 }
 
 .nav-links {
-  margin: 10px 30px;
+  margin: 15px 30px;
+  padding: 10px
 }
 
 
@@ -164,7 +168,7 @@ body {
 
 .linkedin {
   color: white;
-  background-color: #0e76a8
+  background-color: #0e76a8;
 }
 
 .grid-container {
@@ -175,28 +179,29 @@ body {
 }
 
 .grid-box-left {
+  padding: 1em;
+  border: 2px solid black;
   margin: 2em;
   background-color: #ffffff;
-  border: 2px solid black;
   display: grid;
-  grid-template-rows: minmax(50px, 1fr);
-  grid-column-start: 1;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+}
 
+.grid-box-left td {
+background-color: #CCCCCC !important;
 }
 
 .grid-box-right {
+  background-color: black;
   color: white;
   margin: 2em 2em 2em 0em;
   padding: 1em;
   background-color: #6c0020;
   border: 2px solid black;
   display: grid;
-  grid-column-start: 2;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
 
 .dad-jokes1 {
   display: flex;
@@ -217,7 +222,6 @@ body {
   justify-content: space-between;
   align-items: flex-start;
 }
-
 
 
 .icon-image {
@@ -242,17 +246,16 @@ body {
 
   .right-side {
     display: flex;
-    justify-content: flex-end
+    justify-content: center;
 
   }
 
   .left-side {
     display: flex;
-    justify-content: flex-end
+    justify-content: center;
 
   }
 }
-
 
 
 
