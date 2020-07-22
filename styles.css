@@ -7,6 +7,7 @@ body {
   display: grid;
   grid-template-columns: 15% 85%;
 }
+
 /* ***************** Side Bar ******************************************/
 
 .photo {
@@ -19,6 +20,7 @@ body {
 
 .side-bar {
   color: white;
+  width: 100%;
   background-color: #6c0020;
   display: flex;
   flex-direction: column;
@@ -32,6 +34,7 @@ body {
 }
 
 .main {
+  width: 100%;
   border-top: solid 2px black;
   display: flex;
   flex-direction: column;
@@ -55,11 +58,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
-
-
-
-
-
 /* ***************** Search Bar *****************************************/
 
 .search-bar {
@@ -69,11 +67,15 @@ body {
   align-items: center;
 }
 
+.search-input {
+  width: 100  %;
+}
+
 .left-buttons {
+  width: 50%;
   display: flex;
   align-items: center;
 }
-
 
 /* ***************** Title Bar *****************************************/
 
@@ -104,26 +106,23 @@ body {
   align-items: center;
 }
 
-
-
-
-
-
 /* ***************** Tab Bar ******************************************/
 
 .nav-tabs {
+  width: 100%
   padding-top: 10px;
   border-bottom: 2px solid black;
   background-color: #e7bd42;
   display: flex;
+  overflow: scroll;
   justify-content: flex-start;
 }
 
 .nav-links {
-  margin: 15px 30px;
-  padding: 10px
+  font-size: 1.04em;
+  margin: 2% 2%;
+  padding: 1%;
 }
-
 
 /* ***************** Top Main Container **********************************/
 
@@ -187,21 +186,17 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 
-.grid-box-left td {
-background-color: #CCCCCC !important;
-}
 
 .grid-box-right {
   background-color: black;
   color: white;
   margin: 2em 2em 2em 0em;
   padding: 1em;
-  background-color: #6c0020;
+  background-color: #e7bd42;
   border: 2px solid black;
   display: grid;
   grid-template-columns: 1fr;
 }
-
 
 .dad-jokes1 {
   display: flex;
@@ -223,7 +218,6 @@ background-color: #CCCCCC !important;
   align-items: flex-start;
 }
 
-
 .icon-image {
   margin-right: 10px;
 }
@@ -234,30 +228,64 @@ background-color: #CCCCCC !important;
   align-items: center;
 }
 
-
-
 @media screen and (max-width: 900px) {
   .main-container {
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    flex-direction: column;
     display: inline-block;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
 
     }
 
   .right-side {
-    display: flex;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    margin: 2%;
+  }
+
+  .left-side {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-tabs {
+    display: flex
+    justify-content: space-between;
+  }
+}
+
+
+/* @media screen and (max-width: 900px) {
+  .main-container {
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    flex-direction: column;
+    display: inline-block;
+    text-align: center;
+    justify-content: space-around;
+
+    }
+
+  .right-side {
+    display: inline-block;
     justify-content: center;
 
   }
 
   .left-side {
-    display: flex;
+    display: inline-block;
     justify-content: center;
-
   }
-}
 
-
+  .nav-tabs {
+    display: flex
+    justify-content: space-between;
+  }
+} */
 
 /* @media screen and (max-width: 40em) {
   body {
