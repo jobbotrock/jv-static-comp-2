@@ -25,9 +25,13 @@
 
 ### Original Page Layout
 
+ * I made sure to use clashing colors in order see the different borders. Classic 90s page layout was my goal here
+ 
+![alt text](assets/static-comp-basic-layout.png)
+
 ### Original Color Scheme
 ![alt text](assets/new-color-scheme.png)
 
 ## Future Iterations
 
-I would like to make this more creative and add more personal touches. My project still needs some work, the grid responsiveness is not functioning at the present moment. 
+I would like to make this more creative and add more personal touches. The responsiveness isn't the best right now, I will be meeting with my mentor in order to 
